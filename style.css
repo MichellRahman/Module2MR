@@ -1,0 +1,157 @@
+body {
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    border: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bear {}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 3em;
+    color: blue;
+    text-align: right;
+    margin-right: 20px;
+    border-right: 5px solid blue;
+    padding-right: 20px;
+}
+
+#about {
+    display: flex;
+    margin-top: 20px;
+
+
+}
+
+#about h3 {
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#work {
+    display: flex;
+    margin-top: 20px;
+}
+
+#work h3 {
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#work #images {
+    width: 60%;
+
+}
+
+#bigimage {
+    width: 99%;
+    margin-bottom: 20px;
+    border: 5px solid blue
+}
+
+#work div .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#work div .row img {
+    width: 48%;
+    border: 5px solid blue;
+}
+
+#contact {
+    display: flex;
+    margin-top: 20px;
+}
+
+#contact h3 {
+    width: 40%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+}
+
+#contact ul li {
+    margin-right: 20px;
+
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 5px solid blue;
+}
+
+@media screen and (max-width :600px) {
+    header {
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about h3 {
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+
+    #work {
+        flex-direction: column;
+    }
+
+    #work h3 {
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+
+    #work #images {
+        width: 100%;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    #contact h3 {
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+}
